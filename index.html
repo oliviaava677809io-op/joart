@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="keywords" content="art, painting, sculpture, gallery, contemporary, modern, abstract, exhibition, artist, creativity, visual, design, artwork, collection, culture, inspiration, masterpiece, photography, installation, illustration, fineart, digitalart, mixedmedia, artnews, artblog, artresources, artcommunity" />
+        <meta name="description" content="Explore a captivating world of creativity at our art website, where we showcase an extensive collection of stunning paintings, sculptures, and digital art from renowned and emerging artists. Discover inspiring art pieces, learn about different artistic styles, and stay updated with the latest art trends. Whether you are an art enthusiast or a collector, our platform offers a seamless experience to admire, purchase, and engage with art. Dive into our curated galleries and enrich your artistic journey today." />
+
+        <title>Unleashing Creativity, One Masterpiece at a Time</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel='stylesheet' href='css/boxicons.min.css'>
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body>
+    
+    <!-- Header Block: Asymmetric Split Design with Floating Nav -->
+<header class="header-block-asymm hhncol" id="header-main-nav">
+    <div class="header-container">
+    <!-- Brand Section with Gradient Background -->
+    <div class="brand-wrapper">
+        <a href="index.html" class="brand-logo">
+        <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7b2ff7;stop-opacity:1" />
+            </linearGradient>
+            </defs>
+            <circle cx="25" cy="25" r="20" fill="none" stroke="url(#logoGrad)" stroke-width="3"/>
+            <path d="M 15 25 L 25 15 L 35 25 L 25 35 Z" fill="url(#logoGrad)"/>
+        </svg>
+        <span class="brand-text">YYMLF</span>
+        </a>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="main-navigation hhncol">
+        <ul class="nav-list">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Pages
+            <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+            <ul class="dropdown-menu-new" role="menu">
+            <li class="dropdown-item">
+                <a href="celebrating-diversity3-the-heartbeat-of-yymlf.html" class="dropdown-link">Celebrating Diversity: The Heartbeat of YYMLF</a>
+            </li>
+            <li class="dropdown-item">
+                <a href="embracing-diversity3-yymlfs-cultural-journey.html" class="dropdown-link">Embracing Diversity: YYMLF's Cultural Journey</a>
+            </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Testimonials</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link nav-link-accent">About</a>
+        </li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+    <nav class="mobile-navigation">
+        <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item mobile-has-dropdown">
+            <button class="mobile-nav-link mobile-dropdown-trigger">
+            Pages
+            <svg class="mobile-dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+            <ul class="mobile-dropdown-menu-new">
+            <li class="mobile-dropdown-item">
+                <a href="celebrating-diversity3-the-heartbeat-of-yymlf.html" class="mobile-dropdown-link">Celebrating Diversity: The Heartbeat of YYMLF</a>
+            </li>
+            <li class="mobile-dropdown-item">
+                <a href="embracing-diversity3-yymlfs-cultural-journey.html" class="mobile-dropdown-link">Celebrating Diversity: The Heartbeat of YYMLF</a>
+            </li>
+            </ul>
+        </li>
+        <li class="mobile-nav-item">
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </li>
+        <li class="mobile-nav-item">
+            <a href="reviews.html" class="mobile-nav-link">Testimonials</a>
+        </li>
+        <li class="mobile-nav-item">
+            <a href="#about" class="mobile-nav-link mobile-nav-link-accent">About</a>
+        </li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<script>
+// Header Navigation JavaScript
+(function() {
+    const header = document.querySelector('.header-block-asymm');
+    const hamburger = document.querySelector('.hamburger-menu');
+    const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-trigger)');
+    const body = document.body;
+
+    // Hamburger Menu Toggle
+    if (hamburger) {
+    hamburger.addEventListener('click', function() {
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isExpanded);
+        hamburger.classList.toggle('active');
+        mobileOverlay.classList.toggle('active');
+        body.classList.toggle('mobile-menu-open');
+    });
+    }
+
+    // Close mobile menu when clicking a link
+    mobileNavLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        body.classList.remove('mobile-menu-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+    });
+    });
+
+    // Close mobile menu when clicking outside
+    mobileOverlay.addEventListener('click', function(e) {
+    if (e.target === mobileOverlay) {
+        hamburger.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        body.classList.remove('mobile-menu-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+    });
+
+    // Desktop Dropdown Toggle
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
+    const dropdownMenu = document.querySelector('.dropdown-menu-new');
+
+    if (dropdownTrigger) {
+    dropdownTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isExpanded = dropdownTrigger.getAttribute('aria-expanded') === 'true';
+        dropdownTrigger.setAttribute('aria-expanded', !isExpanded);
+        dropdownTrigger.parentElement.classList.toggle('dropdown-active');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!dropdownTrigger.parentElement.contains(e.target)) {
+        dropdownTrigger.setAttribute('aria-expanded', 'false');
+        dropdownTrigger.parentElement.classList.remove('dropdown-active');
+        }
+    });
+    }
+
+    // Mobile Dropdown Toggle
+    const mobileDropdownTrigger = document.querySelector('.mobile-dropdown-trigger');
+
+    if (mobileDropdownTrigger) {
+    mobileDropdownTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        mobileDropdownTrigger.parentElement.classList.toggle('mobile-dropdown-active');
+    });
+    }
+
+    // Sticky Header on Scroll
+    let lastScroll = 0;
+    window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+
+    if (currentScroll > lastScroll && currentScroll > 300) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    }
+
+    lastScroll = currentScroll;
+    });
+})();
+</script>
+
+<main>
+<!-- Hero Block: Geometric Split Design with Floating Elements -->
+<section class="hero-block-geometric payaku" id="about">
+    <div class="hero-background-wrapper">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg-image" style="background-image: url('/img/image-background.png');"></div>
+    <div class="hero-geometric-shape shape-1"></div>
+    <div class="hero-geometric-shape shape-2"></div>
+    <div class="hero-geometric-shape shape-3"></div>
+    </div>
+    
+    <header class="hero-header payaku">
+    <div class="hero-header-container">
+        <div class="hero-logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4L44 14V34L24 44L4 34V14L24 4Z" fill="url(#logo-gradient)" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="24" cy="24" r="8" fill="currentColor" opacity="0.2"/>
+            <defs>
+            <linearGradient id="logo-gradient" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00d4ff"/>
+                <stop offset="100%" stop-color="#7b2ff7"/>
+            </linearGradient>
+            </defs>
+        </svg>
+        </div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input payaku">
+        <label for="menu-toggle" class="menu-toggle-label">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        </label>
+        
+        <nav class="hero-nav">
+        <div class="nav-backdrop"></div>
+        <ul class="nav-list">
+            <li class="nav-item">
+            <a href="#contact" class="nav-link">Get in Touch</a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+    
+    <div class="hero-content-wrapper payaku">
+    <div class="hero-container">
+        <div class="hero-content-grid">
+        <div class="hero-text-column">
+            <div class="hero-text-inner">
+            <div class="hero-badge">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2L12.5 7.5L18 8.5L14 13L15 18.5L10 15.5L5 18.5L6 13L2 8.5L7.5 7.5L10 2Z" fill="currentColor"/>
+                </svg>
+                <span>Premium Solutions</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">Unleashing Creativity, One Masterpiece at a Time</span>
+            </h1>
+            
+            <p class="hero-subtitle payaku">At YYMLF, we believe in the transformative power of art. Our mission is to inspire, innovate, and immerse you in the captivating world of artistic expression. Whether you're an artist or an admirer, join us on a journey where every brush stroke and sculpture tells a unique story. Dive into creativity and explore the endless possibilities with us.</p>
+            
+            <div class="hero-cta-group">
+                <a href="#contact" class="hero-btn hero-btn-primary">
+                <span>Get in Touch</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="hero-visual-column payaku">
+            <div class="hero-floating-cards">
+            <div class="floating-card card-1">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="8" width="32" height="32" rx="8" fill="url(#card1-gradient)"/>
+                <circle cx="24" cy="20" r="6" fill="white" opacity="0.9"/>
+                <rect x="16" y="30" width="16" height="2" rx="1" fill="white" opacity="0.9"/>
+                <rect x="16" y="34" width="12" height="2" rx="1" fill="white" opacity="0.7"/>
+                <defs>
+                    <linearGradient id="card1-gradient" x1="8" y1="8" x2="40" y2="40">
+                    <stop offset="0%" stop-color="#667eea"/>
+                    <stop offset="100%" stop-color="#764ba2"/>
+                    </linearGradient>
+                </defs>
+                </svg>
+                <div class="card-pulse"></div>
+            </div>
+            
+            <div class="floating-card card-2">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="8" width="32" height="32" rx="8" fill="url(#card2-gradient)"/>
+                <path d="M18 24L22 28L30 18" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                    <linearGradient id="card2-gradient" x1="8" y1="8" x2="40" y2="40">
+                    <stop offset="0%" stop-color="#f093fb"/>
+                    <stop offset="100%" stop-color="#f5576c"/>
+                    </linearGradient>
+                </defs>
+                </svg>
+                <div class="card-pulse"></div>
+            </div>
+            
+            <div class="floating-card card-3">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="8" width="32" height="32" rx="8" fill="url(#card3-gradient)"/>
+                <path d="M24 16V32M16 24H32" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                <defs>
+                    <linearGradient id="card3-gradient" x1="8" y1="8" x2="40" y2="40">
+                    <stop offset="0%" stop-color="#4facfe"/>
+                    <stop offset="100%" stop-color="#00f2fe"/>
+                    </linearGradient>
+                </defs>
+                </svg>
+                <div class="card-pulse"></div>
+            </div>
+            
+            <div class="floating-card card-4">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="8" width="32" height="32" rx="8" fill="url(#card4-gradient)"/>
+                <circle cx="24" cy="24" r="8" stroke="white" stroke-width="3"/>
+                <circle cx="24" cy="24" r="3" fill="white"/>
+                <defs>
+                    <linearGradient id="card4-gradient" x1="8" y1="8" x2="40" y2="40">
+                    <stop offset="0%" stop-color="#43e97b"/>
+                    <stop offset="100%" stop-color="#38f9d7"/>
+                    </linearGradient>
+                </defs>
+                </svg>
+                <div class="card-pulse"></div>
+            </div>
+            </div>
+            
+            <div class="hero-decoration-circle"></div>
+            <div class="hero-decoration-dots"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="hero-scroll-indicator">
+    <div class="scroll-line"></div>
+    <div class="scroll-dot"></div>
+    </div>
+</section>
+
+<!-- Futures Block: Asymmetric Diagonal Grid with Neon Accents -->
+<section class="futures-quantum-47x" id="futures-nexus-891" data-aos="fade-up">
+    <div class="futures-container-wrap">
+    <div class="futures-background-mesh"></div>
+    <div class="futures-content-grid">
+        
+        <!-- Feature 1: Elevated Card -->
+        <article class="future-card future-card-prime" data-aos="fade-right" data-aos-delay="100">
+        <div class="future-card-inner">
+            <div class="future-image-container">
+            <div class="future-image-frame">
+                <img src="img/image622351.png" alt="Interactive Art Gallery" class="future-image">
+                <div class="future-image-overlay"></div>
+            </div>
+            <div class="future-accent-blob"></div>
+            </div>
+            <div class="future-content-zone">
+            <h3 class="future-heading">Interactive Art Gallery</h3>
+            <div class="future-divider"></div>
+            <p class="future-description">Our platform offers an immersive digital art gallery experience, allowing users to explore and interact with artworks in a virtual space. This feature enhances user engagement and provides a unique way to appreciate art from the comfort of their home.</p>
+            </div>
+        </div>
+        </article>
+
+        <!-- Feature 2: Tilted Perspective -->
+        <article class="future-card future-card-secondary" data-aos="fade-up" data-aos-delay="200">
+        <div class="future-card-inner">
+            <div class="future-image-container">
+            <div class="future-image-frame">
+                <img src="img/image622352.png" alt="Artist Spotlight" class="future-image">
+                <div class="future-image-overlay"></div>
+            </div>
+            <div class="future-accent-blob"></div>
+            </div>
+            <div class="future-content-zone">
+            <h3 class="future-heading">Artist Spotlight</h3>
+            <div class="future-divider"></div>
+            <p class="future-description">We highlight emerging and established artists, providing them a platform to showcase their work to a global audience. Each spotlight includes a detailed profile, interviews, and a curated selection of their art pieces.</p>
+            </div>
+        </div>
+        </article>
+
+        <!-- Feature 3: Floating Offset -->
+        <article class="future-card future-card-tertiary" data-aos="fade-left" data-aos-delay="300">
+        <div class="future-card-inner">
+            <div class="future-image-container">
+            <div class="future-image-frame">
+                <img src="img/image622353.png" alt="Custom Art Recommendations" class="future-image">
+                <div class="future-image-overlay"></div>
+            </div>
+            <div class="future-accent-blob"></div>
+            </div>
+            <div class="future-content-zone">
+            <h3 class="future-heading">Custom Art Recommendations</h3>
+            <div class="future-divider"></div>
+            <p class="future-description">Using advanced algorithms, we offer personalized art recommendations based on user preferences and browsing history. This feature helps users discover new artists and artworks that align with their tastes, enhancing their overall experience on our platform.</p>
+            </div>
+        </div>
+        </article>
+
+    </div>
+    </div>
+</section>
+
+<!-- Services Block: Floating Card Grid with Gradient Accents -->
+<section class="services-block-fx9" id="services-section-kp7" data-aos="fade-up">
+    <div class="container">
+    <div class="services-header-wrap" data-aos="zoom-in" data-aos-delay="100">
+        <h2 class="services-main-title">Our Premium Services</h2>
+    </div>
+    
+    <div class="services-grid-container">
+        <!-- Service 1 -->
+        <article class="service-card-item" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-icon-wrapper">
+            <svg class="service-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3" fill="none"/>
+            <path d="M32 12V32L44 44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="4" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="service-content-area">
+            <h3 class="service-name">Custom Art Commissions</h3>
+            <p class="service-description">Bring your vision to life with our custom art commissions. Whether you desire a unique portrait, a landscape painting, or a conceptual piece, our talented artists will work closely with you to create a one-of-a-kind artwork tailored to your specifications.</p>
+            <a href="contact.html" class="service-cta-link">Learn More</a>
+        </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon-wrapper">
+            <svg class="service-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="16" width="40" height="36" rx="4" stroke="currentColor" stroke-width="3" fill="none"/>
+            <path d="M20 28H44M20 36H44M20 44H36" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="32" cy="10" r="4" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="service-content-area">
+            <h3 class="service-name">Art Consultation Services</h3>
+            <p class="service-description">Unsure of how to enhance your space with art? Our art consultation service offers expert advice to help you select the perfect pieces. We consider color schemes, themes, and personal style to recommend artworks that best suit your environment.</p>
+            <a href="contact.html" class="service-cta-link">Learn More</a>
+        </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card-item" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-icon-wrapper">
+            <svg class="service-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8L54 20V44L32 56L10 44V20L32 8Z" stroke="currentColor" stroke-width="3" fill="none"/>
+            <circle cx="32" cy="32" r="8" fill="currentColor"/>
+            <path d="M32 24V16M32 48V40M24 32H16M48 32H40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="service-content-area">
+            <h3 class="service-name">Online Art Gallery</h3>
+            <p class="service-description">Explore our extensive online art gallery featuring a curated collection of artworks from emerging and established artists. Browse through diverse styles and mediums to find pieces that resonate with you, all from the comfort of your home.</p>
+            <a href="contact.html" class="service-cta-link">Learn More</a>
+        </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-icon-wrapper">
+            <svg class="service-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 12L40 28H52L42 36L46 52L32 42L18 52L22 36L12 28H24L32 12Z" stroke="currentColor" stroke-width="3" fill="none"/>
+            <circle cx="32" cy="32" r="6" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="service-content-area">
+            <h3 class="service-name">Art Workshops</h3>
+            <p class="service-description">Join our engaging art workshops designed for all skill levels. Whether you're a beginner or an experienced artist, our workshops provide a creative space to learn new techniques, explore different mediums, and express your creativity in a supportive environment.</p>
+            <a href="contact.html" class="service-cta-link">Learn More</a>
+        </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card-item" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-icon-wrapper">
+            <svg class="service-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 32C16 23.1634 23.1634 16 32 16C40.8366 16 48 23.1634 48 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M24 32C24 27.5817 27.5817 24 32 24C36.4183 24 40 27.5817 40 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="4" fill="currentColor"/>
+            <rect x="30" y="36" width="4" height="16" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="service-content-area">
+            <h3 class="service-name">Corporate Art Solutions</h3>
+            <p class="service-description">Transform your office space with our corporate art solutions. We offer tailored art packages that enhance your work environment, boost employee morale, and create a welcoming atmosphere for clients and visitors alike.</p>
+            <a href="contact.html" class="service-cta-link">Learn More</a>
+        </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-icon-wrapper">
+            <svg class="service-svg-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="12" width="40" height="40" rx="8" stroke="currentColor" stroke-width="3" fill="none"/>
+            <path d="M24 24L40 40M40 24L24 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="3" fill="none"/>
+            </svg>
+        </div>
+        <div class="service-content-area">
+            <h3 class="service-name">Art Restoration and Preservation</h3>
+            <p class="service-description">Preserve the beauty of your cherished artworks with our art restoration and preservation services. Our skilled conservators use advanced techniques to repair and maintain your pieces, ensuring they continue to inspire for generations to come.</p>
+            <a href="contact.html" class="service-cta-link">Learn More</a>
+        </div>
+        </article>
+    </div>
+    </div>
+</section>
+
+<section id="about" class="axwomxq bg-light py-5">
+    <div class="container pt-5">
+        <h2 class="text-center py-5">Celebrating Diversity: The Heartbeat of YYMLF</h2>
+        <div class="py-5">At YYMLF, culture is more than just a buzzword—it's the lifeblood that fuels our innovation and success. We believe that diversity is the key to unlocking creativity and driving progress. Our team is a vibrant tapestry of backgrounds, experiences, and perspectives, each contributing to a dynamic work environment where everyone can thrive. By celebrating our differences, we foster an inclusive community where ideas flourish, leading to groundbreaking solutions and a workplace where everyone feels valued and empowered. Join us as we continue to embrace and celebrate the rich cultural mosaic that defines YYMLF, making it a truly unique and inspiring place to work.</div>
+    </div>
+</section>
+
+<!-- Testimonials Block: Floating Card Carousel Design -->
+<section class="testimonials-cascade-rvw" id="testimonials-section-x9k" data-aos="fade-up">
+    <div class="container">
+    <div class="testimonials-header-wrap">
+        <h2 class="testimonials-main-title">Testimonials</h2>
+        <div class="testimonials-decoration-line"></div>
+    </div>
+    
+    <div class="testimonials-carousel-container">
+        <div class="testimonials-carousel-track" id="carousel-track-tm9">
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card-item testimonial-active" data-index="0">
+            <div class="testimonial-avatar-wrapper">
+            <svg class="testimonial-avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                <linearGradient id="avatar-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50" fill="url(#avatar-grad-1)"/>
+                <circle cx="50" cy="38" r="16" fill="#ffffff" opacity="0.9"/>
+                <ellipse cx="50" cy="75" rx="24" ry="20" fill="#ffffff" opacity="0.9"/>
+            </svg>
+            <div class="testimonial-quote-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 8C10 10.2091 8.20914 12 6 12C3.79086 12 2 10.2091 2 8C2 5.79086 3.79086 4 6 4C8.20914 4 10 5.79086 10 8Z" fill="currentColor" opacity="0.2"/>
+                <path d="M22 8C22 10.2091 20.2091 12 18 12C15.7909 12 14 10.2091 14 8C14 5.79086 15.7909 4 18 4C20.2091 4 22 5.79086 22 8Z" fill="currentColor" opacity="0.2"/>
+                <path d="M10 8V14C10 16.2091 8.20914 18 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 8V14C22 16.2091 20.2091 18 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            </div>
+            <div class="testimonial-content-area">
+            <p class="testimonial-text-content">Working with YYMLF has been an absolute pleasure. Their attention to detail and artistic flair have transformed our art project into something truly spectacular. The team is not only talented but also extremely professional in their approach. We highly recommend their services to anyone looking for quality art solutions. - Sarah L.</p>
+            <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Albert Baker</h4>
+                <div class="testimonial-stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="testimonial-card-item" data-index="1">
+            <div class="testimonial-avatar-wrapper">
+            <svg class="testimonial-avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                <linearGradient id="avatar-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50" fill="url(#avatar-grad-2)"/>
+                <circle cx="50" cy="38" r="16" fill="#ffffff" opacity="0.9"/>
+                <ellipse cx="50" cy="75" rx="24" ry="20" fill="#ffffff" opacity="0.9"/>
+            </svg>
+            <div class="testimonial-quote-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 8C10 10.2091 8.20914 12 6 12C3.79086 12 2 10.2091 2 8C2 5.79086 3.79086 4 6 4C8.20914 4 10 5.79086 10 8Z" fill="currentColor" opacity="0.2"/>
+                <path d="M22 8C22 10.2091 20.2091 12 18 12C15.7909 12 14 10.2091 14 8C14 5.79086 15.7909 4 18 4C20.2091 4 22 5.79086 22 8Z" fill="currentColor" opacity="0.2"/>
+                <path d="M10 8V14C10 16.2091 8.20914 18 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 8V14C22 16.2091 20.2091 18 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            </div>
+            <div class="testimonial-content-area">
+            <p class="testimonial-text-content">YYMLF has exceeded our expectations with their creative vision and execution. Every aspect of their service was tailored to our needs, and the result was a stunning piece of art that has become the centerpiece of our collection. Their passion for art is evident in everything they do. A fantastic company to work with! - Mark R.</p>
+            <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Everly Davis</h4>
+                <div class="testimonial-stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="testimonial-card-item" data-index="2">
+            <div class="testimonial-avatar-wrapper">
+            <svg class="testimonial-avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                <linearGradient id="avatar-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50" fill="url(#avatar-grad-3)"/>
+                <circle cx="50" cy="38" r="16" fill="#ffffff" opacity="0.9"/>
+                <ellipse cx="50" cy="75" rx="24" ry="20" fill="#ffffff" opacity="0.9"/>
+            </svg>
+            <div class="testimonial-quote-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 8C10 10.2091 8.20914 12 6 12C3.79086 12 2 10.2091 2 8C2 5.79086 3.79086 4 6 4C8.20914 4 10 5.79086 10 8Z" fill="currentColor" opacity="0.2"/>
+                <path d="M22 8C22 10.2091 20.2091 12 18 12C15.7909 12 14 10.2091 14 8C14 5.79086 15.7909 4 18 4C20.2091 4 22 5.79086 22 8Z" fill="currentColor" opacity="0.2"/>
+                <path d="M10 8V14C10 16.2091 8.20914 18 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 8V14C22 16.2091 20.2091 18 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            </div>
+            <div class="testimonial-content-area">
+            <p class="testimonial-text-content">I am incredibly impressed with the work YYMLF delivered. They took our ideas and brought them to life in a way we could never have imagined. The process was smooth, and the final product was beyond our expectations. YYMLF is a gem in the art world, and their commitment to excellence is unparalleled. - Emily K.</p>
+            <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Philip Long</h4>
+                <div class="testimonial-stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="testimonials-nav-controls">
+        <button class="testimonial-nav-btn testimonial-prev-btn" id="prev-btn-tm" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="testimonials-pagination" id="pagination-dots-tm">
+            <span class="pagination-dot pagination-active" data-slide="0"></span>
+            <span class="pagination-dot" data-slide="1"></span>
+            <span class="pagination-dot" data-slide="2"></span>
+        </div>
+        <button class="testimonial-nav-btn testimonial-next-btn" id="next-btn-tm" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Testimonials Carousel JavaScript -->
+<script>
+    (function() {
+    const track = document.getElementById('carousel-track-tm9');
+    const cards = document.querySelectorAll('.testimonial-card-item');
+    const prevBtn = document.getElementById('prev-btn-tm');
+    const nextBtn = document.getElementById('next-btn-tm');
+    const dots = document.querySelectorAll('.pagination-dot');
+    
+    let currentIndex = 0;
+    const totalCards = cards.length;
+    let autoplayInterval;
+
+    function updateCarousel(index) {
+        cards.forEach((card, i) => {
+        card.classList.remove('testimonial-active', 'testimonial-prev', 'testimonial-next');
+        
+        if (i === index) {
+            card.classList.add('testimonial-active');
+        } else if (i === (index - 1 + totalCards) % totalCards) {
+            card.classList.add('testimonial-prev');
+        } else if (i === (index + 1) % totalCards) {
+            card.classList.add('testimonial-next');
+        }
+        });
+
+        dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('pagination-active');
+        } else {
+            dot.classList.remove('pagination-active');
+        }
+        });
+
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        const newIndex = (currentIndex + 1) % totalCards;
+        updateCarousel(newIndex);
+    }
+
+    function prevSlide() {
+        const newIndex = (currentIndex - 1 + totalCards) % totalCards;
+        updateCarousel(newIndex);
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+    if (nextBtn && prevBtn) {
+        nextBtn.addEventListener('click', () => {
+        stopAutoplay();
+        nextSlide();
+        startAutoplay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+        stopAutoplay();
+        prevSlide();
+        startAutoplay();
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+        stopAutoplay();
+        updateCarousel(index);
+        startAutoplay();
+        });
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    if (track) {
+        track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        }, false);
+
+        track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        }, false);
+    }
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+        stopAutoplay();
+        nextSlide();
+        startAutoplay();
+        }
+        if (touchEndX > touchStartX + 50) {
+        stopAutoplay();
+        prevSlide();
+        startAutoplay();
+        }
+    }
+
+    // Initialize
+    updateCarousel(0);
+    startAutoplay();
+
+    // Pause autoplay on hover
+    if (track) {
+        track.addEventListener('mouseenter', stopAutoplay);
+        track.addEventListener('mouseleave', startAutoplay);
+    }
+    })();
+</script>
+
+
+<!-- FAQ Block: Geometric gradient cards with static expanded design -->
+<section class="faq-section-geometric xxpdosgc" id="faq-block-2847" data-aos="fade-up">
+    <div class="container">
+    <div class="faq-header-wrapper">
+        <h2 class="faq-main-title">Frequently Asked Questions</h2>
+        <div class="faq-decorative-line"></div>
+    </div>
+    
+    <div class="faq-grid-container">
+        <div class="faq-card faq-card-1" data-aos="fade-right" data-aos-delay="100">
+        <div class="faq-card-inner">
+            <div class="faq-number">01</div>
+            <h3 class="faq-question">How can I purchase artwork from your site?</h3>
+            <div class="faq-answer-content">
+            <p class="faq-answer">Simply browse our online gallery, add desired pieces to your cart, and proceed to checkout with secure payment options available.</p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="faq-card faq-card-2" data-aos="fade-left" data-aos-delay="200">
+        <div class="faq-card-inner">
+            <div class="faq-number">02</div>
+            <h3 class="faq-question">Do you offer commissioned art services?</h3>
+            <div class="faq-answer-content">
+            <p class="faq-answer">Yes, we offer custom art commissions. You can contact us through our website to discuss your vision and receive a personalized quote.</p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="faq-card faq-card-3" data-aos="fade-right" data-aos-delay="300">
+        <div class="faq-card-inner">
+            <div class="faq-number">03</div>
+            <h3 class="faq-question">What is the return policy for purchased artwork?</h3>
+            <div class="faq-answer-content">
+            <p class="faq-answer">We offer a 14-day return policy for undamaged artwork. For full details, please refer to our return guidelines on the website.</p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="faq-card faq-card-4" data-aos="fade-left" data-aos-delay="400">
+        <div class="faq-card-inner">
+            <div class="faq-number">04</div>
+            <h3 class="faq-question">Are all artworks original and signed by the artist?</h3>
+            <div class="faq-answer-content">
+            <p class="faq-answer">Yes, all artworks featured are original creations and signed by the artist, ensuring authenticity and uniqueness.</p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="faq-card faq-card-5" data-aos="fade-up" data-aos-delay="500">
+        <div class="faq-card-inner">
+            <div class="faq-number">05</div>
+            <h3 class="faq-question">Do you ship internationally?</h3>
+            <div class="faq-answer-content">
+            <p class="faq-answer">We do offer international shipping. Shipping fees and delivery times vary based on location and will be calculated during checkout.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="contact-info-section" id="contact" data-aos="fade-up">
+    <div class="contact-container">
+    <div class="contact-content-wrapper">
+        <!-- Header -->
+        <div class="contact-header" data-aos="fade-right" data-aos-delay="100">
+        <h2 class="contact-main-title">Contact Us</h2>
+        <div class="title-accent-line"></div>
+        </div>
+
+        <!-- Contact Details Grid -->
+        <div class="contact-details-grid">
+        <!-- Address Card -->
+        <div class="contact-card address-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-icon-wrapper address-icon">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="contact-content">
+            <div class="contact-value address-text">USA, Portland, 4266 Abraham Bridge Suite 260</div>
+            </div>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="contact-card phone-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-icon-wrapper phone-icon">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="contact-content">
+            <a href="tel:1 886-912-1941" class="contact-value phone-link">1 886-912-1941</a>
+            </div>
+        </div>
+
+        <!-- Email Card -->
+        <div class="contact-card email-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="contact-icon-wrapper email-icon">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+            </svg>
+            </div>
+            <div class="contact-content">
+            <span class="email-text contact-value email-link"></span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Map Container with Floating Effect -->
+    <div class="contact-map-container" data-aos="fade-left" data-aos-delay="500">
+        <div class="map-frame-wrapper">
+        <div class="map-decorative-blob"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89419.96309426984!2d-122.73680115786324!3d45.542804560703324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9e6f6d18591!2sPortland%2C%20OR%2C%20USA!5e0!3m2!1sen!2snl!4v1687183698434!5m2!1sen!2snl" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Background Decorative Elements -->
+    <div class="contact-bg-decoration decoration-1"></div>
+    <div class="contact-bg-decoration decoration-2"></div>
+    <div class="contact-bg-decoration decoration-3"></div>
+</section>
+
+<section class="contact-form-section" id="contact-form-block" data-aos="fade-up">
+    <div class="contact-container">
+    <div class="contact-content-wrapper">
+        <!-- Header Side -->
+        <div class="contact-header-side" data-aos="fade-right" data-aos-delay="100">
+        <div class="contact-header-content">
+            <h2 class="contact-main-header">Get In Touch</h2>
+            <div class="contact-decoration-line"></div>
+        </div>
+        </div>
+        
+        <!-- Form Side -->
+        <div class="contact-form-side" data-aos="fade-left" data-aos-delay="200">
+        <div class="contact-form-card">
+            <form class="contact-form" method="POST" action="order.php">
+            <div class="form-group">
+                <label for="contact-name" class="form-label">Name</label>
+                <input 
+                type="text" 
+                id="contact-name" 
+                name="name" 
+                class="form-input" 
+                required 
+                autocomplete="name"
+                />
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-email" class="form-label">Email</label>
+                <input 
+                type="email" 
+                id="contact-email" 
+                name="email" 
+                class="form-input" 
+                required 
+                autocomplete="email"
+                />
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea 
+                id="contact-message" 
+                name="message" 
+                class="form-textarea" 
+                rows="5" 
+                required
+                ></textarea>
+            </div>
+            
+            <div class="form-submit-wrapper">
+                <button type="submit" class="form-submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-arrow">→</span>
+                </button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Background Decorative Elements -->
+    <div class="contact-bg-decoration contact-bg-circle-1"></div>
+    <div class="contact-bg-decoration contact-bg-circle-2"></div>
+    <div class="contact-bg-decoration contact-bg-blob"></div>
+</section>
+
+</main>
+<footer class="footer-wave-modern" id="footer-main-section">
+    <div class="footer-wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+    </div>
+    
+    <div class="footer-container">
+    <div class="footer-content-grid">
+        <!-- Company Info Column -->
+        <div class="footer-column footer-brand-column" >
+        <div class="footer-brand-wrapper">
+            <h3 class="footer-brand-name">YYMLF</h3>
+            <p class="footer-tagline">Delivering Excellence Since Day One</p>
+        </div>
+        
+        <div class="footer-contact-info">
+            <div class="footer-contact-item">
+            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>USA, Portland, 4266 Abraham Bridge Suite 260</span>
+            </div>
+            
+            <div class="footer-contact-item">
+            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:1 886-912-1941" class="footer-phone-link">1 886-912-1941</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-column footer-links-column" >
+        <h4 class="footer-column-title">Quick Links</h4>
+        <nav class="footer-nav-list">
+            <a href="celebrating-diversity3-the-heartbeat-of-yymlf.html" class="footer-nav-link">
+            <span class="footer-link-arrow">→</span>
+            <span>Celebrating Diversity: The Heartbeat of YYMLF</span>
+            </a>
+            <a href="embracing-diversity3-yymlfs-cultural-journey.html" class="footer-nav-link">
+            <span class="footer-link-arrow">→</span>
+            <span>Embracing Diversity: YYMLF's Cultural Journey</span>
+            </a>
+        </nav>
+        </div>
+
+        <!-- Legal Links Column -->
+        <div class="footer-column footer-legal-column" >
+        <h4 class="footer-column-title">Legal</h4>
+        <nav class="footer-nav-list">
+            <a href="policy.html" class="footer-nav-link">
+            <span class="footer-link-arrow">→</span>
+            <span>Privacy Policy</span>
+            </a>
+            <a href="terms.html" class="footer-nav-link">
+            <span class="footer-link-arrow">→</span>
+            <span>Terms & Conditions</span>
+            </a>
+        </nav>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-column footer-newsletter-column" >
+        <h4 class="footer-column-title">Stay Connected</h4>
+        <p class="footer-newsletter-text">Follow us on social media for the latest updates and news.</p>
+        <div class="footer-social-icons">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+            </svg>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom" >
+        <div class="footer-bottom-content">
+        <p class="footer-copyright">© 2025 All Rights Reserved</p>
+        <div class="footer-bottom-links">
+            <a href="policy.html" class="footer-bottom-link">Privacy Policy</a>
+            <span class="footer-separator">•</span>
+            <a href="terms.html" class="footer-bottom-link">Terms & Conditions</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+
+
+    <script type="text/javascript" src="js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"banner bottom",Time:"0", Message: "We use cookies to improve the site and its user experience. By continuing to use the site, you agree to the use of cookies. You can always disable cookies in your browser settings.", ButtonText: "Accept", LinkText: "Learn more"})</script>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>AOS.init();</script>
+    </body>
+</html>
